@@ -10,6 +10,13 @@ N 검색한 반대방향으로 이동
 
 `kubectl edit <리소스타입> <리소스명>`
 
+`kubectl edit pod <pod-name>`
+생성된 pod 수정에 대해서는 spec내의 극히 제한된 필드만 수정가능
+- (1안) deployment,statefulset,daemonset을 수정한다
+- (2안 - 1) `kubectl get pod <pod-name> -o yaml > <yaml-name>.yaml`
+- (2안 - 2) `kubectl replace --force -f <yaml-name>.yaml`
+
+
 `kubectl get <리소스타입> <리소스명> -n default -o yaml > <리소스 파일>.yaml`
 
 `kubectl config set-context --current--namespace=<원하는_네임스페이스_이름>`
