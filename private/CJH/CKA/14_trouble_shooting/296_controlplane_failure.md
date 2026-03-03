@@ -11,3 +11,11 @@
 `kubectl logs kube-apiserver-master -n kube-system`
 
 `sudo journalctl -u kube-apiserver`
+
+
+# /etc/kubernetes/manifests/
+
+`/etc/kubernetes/manifests/etcd.yaml`
+`/etc/kubernetes/manifests/kube-controller-manager.yaml`
+`/etc/kubernetes/manifests/kube-apiserver.yaml`
+`/etc/kubernetes/manifests/kube-scheduler.yaml`
