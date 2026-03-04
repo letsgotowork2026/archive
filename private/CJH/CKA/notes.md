@@ -25,7 +25,11 @@ N 검색한 반대방향으로 이동
 대소문자 구분 O `grep -I <찾은 단어>`
 대소문자 구분 X `grep -i <찾은 단어>`
 
-# Kubectl
+# Kubernetes
+
+https://kubernetes.io/ko/docs/reference/kubectl/cheatsheet/
+
+## Kubectl
 
 `kubectl edit <리소스타입> <리소스명>`
 
@@ -39,3 +43,5 @@ N 검색한 반대방향으로 이동
 `kubectl get <리소스타입> <리소스명> -n default -o yaml > <리소스 파일>.yaml`
 
 `kubectl config set-context --current--namespace=<원하는_네임스페이스_이름>`
+
+`kubectl scale deployment <deployment-name> --replicas=<number>`
